@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<header id="mc_-header">
+	<div class="mc_-aside">
+		<div class="mc_-lgo">
+		<a href="http://motionscloud.com"><%= image_tag("logo-default-symbo.png", alt: "MotionsCloud") %></a>
+		</div>
+	</div>
+	
+</header>
+<body class="mc_-root">
+  
+  <main class="mc_-main">
+	<aside class="mc_-as-lf"></aside>
+	<section class="mc_-scc_box">
+	   <div class="mc_main-inner">
+			<div class="mc_-from-fil">
+        <div class="form-logo"><%= image_tag("insurance-logo.png",size: "200x100", alt: "MotionsCloud") %></div>
+				<h2 class="mc_-hd-tiitle">(Testing Version) MC CLAIM DAMAGE CAPTURE</h2>
+				<div class="mc_box-dt-canvas">
+          <%= form_tag claim_panel_path, {:class => 'form-pad'} do %> 
+            <div class="form-group">
+              <label for="inputCaptureOption" class="bold">Capture option</label>
+              <select id="inputCaptureOption" class="form-control">
+                <option selected>Photo</option>
+                <option>Live video inspection</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inputClaimNumber" class="bold">* Claim number</label>
+              <input type="text" class="form-control" id="inputClaimNumber">
+            </div>
+            <div class="form-group">
+              <label for="inputClaimType" class="bold">Claim type</label>
+              <select id="inputClaimType" class="form-control">
+                  <option selected>Auto</option>
+                  <option>Property</option>
+              </select>
+            </div>
+            <br/>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputLossDate" class="bold">* Loss date</label>
+                <input type="text" class="form-control" id="inputLossDate">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputLossLocation" class="bold">* Loss location</label>
+                <input type="text" class="form-control" id="inputLossLocation">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputShopType" class="bold">Insured or claimant or auto/repair shop</label>
+              <select id="inputShopType" class="form-control">
+                  <option selected>Insured</option>
+                  <option>Claimant</option>
+                  <option>Auto/repair shop</option>
+              </select>
+            </div>
+            <br/>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputFirstName" class="bold">* First name</label>
+                <input type="text" class="form-control" id="inputFirstName">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputLastName" class="bold">* Last name</label>
+                <input type="text" class="form-control" id="inputLastName">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail" class="bold">* Email or mobile phone number</label>
+              <input type="text" class="form-control" id="inputEmail">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputAdjusterName" class="bold">* Adjuster name</label>
+                <input type="text" class="form-control" id="inputAdjusterName">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputAdjusterExtn" class="bold">* Adjuster extention number(3 digits)</label>
+                <input type="typeext" class="form-control" id="inputAdjusterExtn">
+              </div>
+            </div> 
+            <%= submit_tag 'Sign in', class: 'btn btn-primary' %> 
+            <% end %>
+				</div>
+			</div>
+	   </div>
+	</section>
+	<footer id="mc_-footer">
+		<p class="mc_-ftr_cpright">Copyright &copy; 2016-2018 <a href="http://motionscloud.com">MotionsCloud</a>. All Rights Reserved</p>	
+	</footer>
+ </main>
+</body>
+</html>

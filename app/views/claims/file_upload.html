@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MotionsCloud | AI Platform</title>
+<!-- Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!-- FAVICON -->
+<link rel="shortcut icon" href="http://motionscloud.com/assets/images/MotionsCloud-Icon.PNG" type="image/x-icon">
+<!-- My Styles -->
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/imageuploadify.min.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="css/casc_-appscript.css"/>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"/>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css"/>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+.imageuploadify-container {
+    display: none;
+}
+.imageuploadify-container:nth-of-type(1) {
+    display: block;
+}
+</style>
+
+</head>
+<header id="mc_-header">
+	<div class="mc_-aside">
+	<div class="mc_-lgo">
+	<a href="http://motionscloud.com"><%= image_tag("logo-default-symbo.png", alt: "MotionsCloud") %></a>
+	</div>
+	</div>
+	
+</header>
+<body class="mc_-root">
+ <main class="mc_-main">
+	<aside class="mc_-as-lf"></aside>
+	<section class="mc_-scc_box">
+	   <div class="mc_main-inner">
+			<div class="mc_-from-fil">
+				<h2 class="mc_-hd-tiitle">Hotplate and Window Crack Detection</h2>
+				<form id="mc_-uplod">
+					<div class="mc_-form-box">
+						<input type="file" accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf" multiple>
+					</div>
+				</form>
+<!--
+				<div class="mc_-overlay-upload" >
+					<div class="mc_-overlay-contents">
+						<div class="mc_-ovrlay-lod-snap">
+						</div>
+						<div class="mc_-file-deails">
+							<span class="mc_-file-nme">Broken-Window.jpg</span>
+							<span class="mc_-file-sze">136.75 KB</span>
+						</div>
+						<span class="mc-file-lod-counters">37%</span>
+						<span class="mc_-revove-lod"></span>
+					</div>
+				</div>
+-->
+			</div>
+	   </div>
+
+	</section>
+	<footer id="mc_-footer">
+		<p class="mc_-ftr_cpright">Copyright &copy; 2016-2018 <a href="http://motionscloud.com">MotionsCloud</a>. All Rights Reserved</p>		
+	</footer>
+ </main>
+<footer>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript" src="jscripts/imageuploadify.min.js"></script>
+<script type="text/javascript">
+            $(document).ready(function() {
+                $('input[type="file"]').imageuploadify();
+            })
+        </script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:15,
+	pagination:false,
+    navigation:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+</script>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+       }
+        else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+<style>
+*{outline:none!important;}
+</style>
+</footer>
+</body>
+</html>

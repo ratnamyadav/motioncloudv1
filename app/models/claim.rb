@@ -1,0 +1,3 @@
+class Claim < ApplicationRecord
+	
+end
